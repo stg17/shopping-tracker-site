@@ -21,8 +21,10 @@
 
   <h2>What is shared, and with whom</h2>
   <p>To read each order email, the app sends that email's text to Anthropic's Claude API, which extracts the
-  store, items, order status, and tracking details. Before anything is sent, the app removes card numbers,
+  store, items, order status, and tracking details. Before anything is sent, the app automatically tries to remove card numbers,
   Social Security and account numbers, phone numbers, and street addresses on the user's computer.
+  This filtering is automatic and may not catch everything; names, email addresses, and purchase details
+  are not removed.
   Anthropic does not use this data to train its models and keeps it only for a limited time, as described in
   <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.</p>
   <p>No data is sold, used for advertising, or shared with anyone else.</p>
